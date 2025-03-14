@@ -1,0 +1,57 @@
+.hero {
+  /* Wysokość całej sekcji, aby wypełnić ekran */
+  width: 100%;
+  height: 100vh;
+  /* Usunięto: background i background-size (przenosimy je do body) */
+  position: relative;
+
+  .hero-content {
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+    color: $white;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Półprzezroczysta warstwa dla czytelności tekstu */
+    padding: $padding-base * 2;
+
+    .hero-logo {
+      max-width: 400px;
+      margin-bottom: $padding-base * 2;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: $padding-base;
+      max-width: 600px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: $padding-base * 2;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: $padding-base;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+      .btn {
+        background-color: $primary-color;
+        color: $white;
+        padding: $padding-base;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+
+        &.secondary {
+          background-color: darken($primary-color, 10%);
+        }
+
+        &:hover {
+          background-color: lighten($primary-color, 10%);
+        }
+      }
+    }
+  }
+}

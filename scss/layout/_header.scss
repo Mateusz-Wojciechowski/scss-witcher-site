@@ -1,0 +1,28 @@
+.top-nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: $padding-base;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: $padding-base;
+  }
+
+  li {
+    .active {
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+
+  a {
+    color: $white;
+    padding: $padding-base / 2;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
