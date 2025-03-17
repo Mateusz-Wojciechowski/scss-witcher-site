@@ -1,6 +1,10 @@
 .top-nav {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 1.0);
   padding: $padding-base;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  height: $navbar-height;
 
   ul {
     list-style: none;

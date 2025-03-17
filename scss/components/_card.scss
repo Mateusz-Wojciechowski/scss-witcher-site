@@ -22,4 +22,32 @@
   p {
     font-size: 1em;
   }
+
+  .card-content {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+
+    // .image-container {
+    //   flex: 1; // Obraz zajmie tyle miejsca, ile potrzeba
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    // }
+
+    img {
+      max-width: 100%; // Nie wyjdzie poza kontener
+      max-width: 200px;
+      max-height: 250px; // Ogranicza wysokość
+      height: auto;
+      width: auto;
+      border-radius: 8px;
+    }
+
+    p {
+      flex: 2; // Tekst zajmuje więcej miejsca niż obraz
+      font-size: 1em;
+    }
+  }
 }
