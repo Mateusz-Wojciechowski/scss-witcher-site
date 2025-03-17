@@ -1,2 +1,3 @@
 - Dodać zdjęcia postaci
 - Zrobić stopkę dla about.html i characters.html taką samą jak ma index.html
+- sprawdzić elementy
