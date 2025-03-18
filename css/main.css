@@ -49,8 +49,6 @@ img {
   display: block; /* Usuwa dodatkowe marginesy w niektórych przeglądarkach */
 }
 
-/* Dzięki temu sekcja .main-content będzie półprzezroczysta,
-   co poprawi czytelność tekstu na tle obrazka. */
 .main-content {
   width: 90%;
   max-width: 1200px;
@@ -111,7 +109,6 @@ img {
   /* Wysokość całej sekcji, aby wypełnić ekran */
   width: 100%;
   height: 100vh;
-  /* Usunięto: background i background-size (przenosimy je do body) */
   position: relative;
 }
 .hero .hero-content {
