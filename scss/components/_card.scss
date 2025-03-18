@@ -1,53 +1,54 @@
-%card-base {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-  padding: $padding-base;
-  margin: $padding-base 0;
-  transition: background-color 0.3s ease;
-}
+.main-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $padding-base * 2;
+  background-color: rgba(0, 0, 0, 0.5);
 
-.card {
-  @extend %card-base;
-
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+  h1, h2, p {
+    color: $white;
   }
 
-  h2 {
-    margin-bottom: $padding-base / 2;
-    font-size: 1.3em;
-  }
+  .card {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: $padding-base;
+    margin: $padding-base 0;
+    transition: background-color 0.3s ease;
 
-  p {
-    font-size: 1em;
-  }
+    &:hover {
+      @include hover-effect(rgba(255, 255, 255, 0.08), 1.01);
+    }
 
-  .card-content {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    gap: 20px;
-
-    // .image-container {
-    //   flex: 1; // Obraz zajmie tyle miejsca, ile potrzeba
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    // }
-
-    img {
-      max-width: 100%; // Nie wyjdzie poza kontener
-      max-width: 200px;
-      max-height: 250px; // Ogranicza wysokość
-      height: auto;
-      width: auto;
-      border-radius: 8px;
+    h2 {
+      margin-bottom: $padding-base / 2;
+      font-size: 1.3em;
     }
 
     p {
-      flex: 2; // Tekst zajmuje więcej miejsca niż obraz
       font-size: 1em;
     }
+
+    .card-content {
+          display: flex;
+          align-items: center;
+          text-align: left;
+          gap: 20px;
+      
+          img {
+            max-width: 100%;
+            max-width: 200px;
+            max-height: 250px;
+            height: auto;
+            width: auto;
+            border-radius: 8px;
+          }
+      
+          p {
+            flex: 2;
+            font-size: 1em;
+          }
+        }
   }
 }

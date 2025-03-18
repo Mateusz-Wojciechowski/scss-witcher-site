@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  /* Globalne tło, identyczne jak w index.html */
   background: url('../images/witcher_bg.png') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
@@ -46,6 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 img {
   max-width: 100%;
   height: auto;
+<<<<<<< Updated upstream
   display: block; /* Usuwa dodatkowe marginesy w niektórych przeglądarkach */
 }
 
@@ -81,4 +81,7 @@ img {
       font-size: 1em;
     }
   }
+=======
+  display: block;
+>>>>>>> Stashed changes
 }
